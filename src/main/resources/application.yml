@@ -1,0 +1,10 @@
+server:
+  port: 3333
+
+spring:
+  data:
+    mongodb.uri: mongodb+srv://oministack:oministack@database-lqnos.mongodb.net/aircncSpring?retryWrites=true&w=majority
+
+
+
+
