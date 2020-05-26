@@ -5,19 +5,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.bson.types.ObjectId;
-import org.springframework.data.mongodb.core.mapping.Document;
+import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Id;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Document(collection = "users")
+@Entity
 public class User {
 
+    @Id
     private ObjectId id;
-    private String email;
-
-    public User (ObjectId id){
-        this.id = id;
-    }
+    private String email;;
 }

@@ -12,12 +12,12 @@ import lombok.NoArgsConstructor;
 @Data
 public class UserResponse {
 
-    private String id;
+    private String _id;
     private String email;
 
     public static UserResponse of(User user) {
         return UserResponse.builder()
-            .id(user.getId().toString())
+            ._id(user.getId().toString())
             .email(user.getEmail())
             .build();
     }
